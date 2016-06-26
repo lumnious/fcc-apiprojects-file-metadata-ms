@@ -7,5 +7,13 @@
   </head>
   <body>
     {{{body}}}
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  	<script type="text/javascript">
+  		jQuery(document).ready(function() {
+  			$('#fileInput').change(function() {
+  				$('#importedFile').text($('#fileInput').prop("files")[0]['name']);
+				});
+  		});
+  	</script>
   </body>
 </html>
