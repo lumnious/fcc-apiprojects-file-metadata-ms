@@ -13,6 +13,10 @@
   			$('#fileInput').change(function() {
   				$('#importedFile').text($('#fileInput').prop("files")[0]['name']);
 				});
+				$('#submitbtn').submit(function(event) {
+					console.log("Handler for .submit() called.");
+					event.preventDefault();
+				});
   		});
   	</script>
   </body>
